@@ -15,6 +15,6 @@ app.use(cors({
     origin: FRONTEND_URL
 }));
 app.use(express.json());
-app.use('', routes);
+app.use('/', routes);
 
 export default app;
