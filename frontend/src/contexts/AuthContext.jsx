@@ -134,7 +134,7 @@ export const AuthProvider = ({ children }) => {
             });
 
             const data = await response.json();
-            if (response.status !== 200) {
+            if (response.status !== 201) {
                 return data.message;
             }
 
