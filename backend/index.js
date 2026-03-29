@@ -17,5 +17,6 @@ const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5173";
 app.use(cors());
 app.use(express.json());
 app.use('/', routes);
+app.options('*', cors());
 
 export default app;
